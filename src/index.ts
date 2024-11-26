@@ -52,6 +52,7 @@ function transformMetadata() {
     });
     const gamelistpath = join(
       outputpath,
+      "gamelist",
       basename(metadataFile, extname(metadataFile))
     );
     save(gamelistpath, `gamelist.xml`, xml);
